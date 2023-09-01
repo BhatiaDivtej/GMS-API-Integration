@@ -2,6 +2,8 @@ import requests
 import time
 
 # Replace 'YOUR_API_KEY' with your actual Google API key
+
+# Add your api key here
 api_key = ''
 
 
