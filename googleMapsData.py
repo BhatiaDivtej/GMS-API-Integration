@@ -8,6 +8,7 @@ api_key = ''
 
 
 search_query = "student housing near Northern Illinois University"
+// or a similar uni town
 url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={search_query}&key={api_key}"
 
 results = []
