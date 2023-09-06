@@ -9,6 +9,7 @@ api_key = ''
 
 search_query = "student housing near Northern Illinois University"
 // or a similar uni town
+
 url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={search_query}&key={api_key}"
 
 results = []
@@ -16,7 +17,10 @@ next_page_token = None
 
 while len(results) < 500:
     if next_page_token:
+        
         url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?pagetoken={next_page_token}&key={api_key}"
+
+    // sends
     response = requests.get(url)
     data = response.json()
 
